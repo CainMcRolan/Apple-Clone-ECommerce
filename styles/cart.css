@@ -509,7 +509,7 @@ nav > div {
    cursor: pointer;
 }
 
-@media screen and (min-width: 1360px) and (min-height: 720px)  {
+@media screen and (min-width: 1360px) and (min-height: 630px)  {
    .pc_navigation {
       width: 100%;
       height: 4vh;
