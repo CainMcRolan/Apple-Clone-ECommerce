@@ -10,27 +10,27 @@
 
 @font-face {
    font-family: 'GothamThin';
-   src: url(assets/fonts/GothamNarrow-Thin.otf);
+   src: url(/assets/fonts/GothamNarrow-Thin.otf);
 }
 
 @font-face {
    font-family: 'SFPRO';
-   src: url(assets/fonts/SF-Pro-Display-Regular.otf);
+   src: url(/assets/fonts/SF-Pro-Display-Regular.otf);
 }
 
 @font-face {
    font-family: 'SFPROBOLD';
-   src: url(assets/fonts/SF-Pro-Display-Bold.ttf);
+   src: url(/assets/fonts/SF-Pro-Display-Bold.ttf);
 }
 
 @font-face {
    font-family: 'SFPROTHIN';
-   src: url(assets/fonts/SF-Pro-Display-Light.ttf);
+   src: url(/assets/fonts/SF-Pro-Display-Light.ttf);
 }
 
 @font-face {
    font-family: 'Oswald';
-   src: url(assets/fonts/Oswald-Bold.ttf);
+   src: url(/assets/fonts/Oswald-Bold.ttf);
 }
 
 * {
@@ -90,25 +90,25 @@ nav > div {
 }
 
 .search_icon { 
-   background-image: url(assets/search-icon.png);
+   background-image: url(/assets/search-icon.png);
    background-size: cover;
    background-repeat: no-repeat;
 }
 
 .cart_icon {
-   background-image: url('assets/cart.png');
+   background-image: url('/assets/cart.png');
    background-size: cover;
    background-repeat: no-repeat;
 }
 
 .user_icon {
-   background-image: url('assets/user.png');
+   background-image: url('/assets/user.png');
    background-size: cover;
    background-repeat: no-repeat;
 }
 
 .menu {
-   background-image: url('assets/menu.png');
+   background-image: url('/assets/menu.png');
    background-size: cover;
    background-repeat: no-repeat;
 }
@@ -150,7 +150,7 @@ nav > div {
  }
 
 .search_icon {
-   background-image: url('assets/search-icon.png');
+   background-image: url('/assets/search-icon.png');
    background-size: cover;
    background-repeat: no-repeat;
    width: 23px; 
@@ -194,7 +194,7 @@ nav > div {
  }
  
 .menu {
-   background-image: url('assets/menu.png');
+   background-image: url('/assets/menu.png');
    background-size: cover;
    background-repeat: no-repeat;
    width: 30px; 
@@ -427,7 +427,7 @@ nav > div {
 .gadget1 {
    width: 60%;
    height: 45%;
-   background-image: url('assets/macbook-square.png');
+   background-image: url('/assets/macbook-square.png');
    background-size: cover;
 }
 
@@ -435,7 +435,7 @@ nav > div {
    width: 39%;
    height: 45%;
    margin-left: 1%;
-   background-image: url('assets/iphone-blue.png');
+   background-image: url('/assets/iphone-blue.png');
    background-size: cover;
 }
 
@@ -443,14 +443,14 @@ nav > div {
    width: 39%;
    height: 45%;
    margin-right: 1%;
-   background-image: url('assets/airpods-square.png');
+   background-image: url('/assets/airpods-square.png');
    background-size: cover;
 }
 
 .gadget4 {
    width: 60%;
    height: 45%;
-   background-image: url('assets/iphone-gold-1.png');
+   background-image: url('/assets/iphone-gold-1.png');
    background-size: cover;
 }
 
@@ -778,25 +778,25 @@ nav > div {
    }
    
    .search_icon { 
-      background-image: url(assets/search-icon.png);
+      background-image: url(/assets/search-icon.png);
       background-size: cover;
       background-repeat: no-repeat;
    }
    
    .cart_icon {
-      background-image: url('assets/cart.png');
+      background-image: url('/assets/cart.png');
       background-size: cover;
       background-repeat: no-repeat;
    }
    
    .user_icon {
-      background-image: url('assets/user.png');
+      background-image: url('/assets/user.png');
       background-size: cover;
       background-repeat: no-repeat;
    }
    
    .menu {
-      background-image: url('assets/menu.png');
+      background-image: url('/assets/menu.png');
       background-size: cover;
       background-repeat: no-repeat;
    }
@@ -839,7 +839,7 @@ nav > div {
     }
    
    .search_icon {
-      background-image: url('assets/search-icon.png');
+      background-image: url('/assets/search-icon.png');
       background-size: cover;
       background-repeat: no-repeat;
       width: 23px; 
@@ -888,7 +888,7 @@ nav > div {
     }
     
    .menu {
-      background-image: url('assets/menu.png');
+      background-image: url('/assets/menu.png');
       background-size: cover;
       background-repeat: no-repeat;
       width: 30px; 
@@ -993,15 +993,15 @@ nav > div {
    }
 
    .my_img1 {
-      content: url("assets/index-background-720.png");
+      content: url("/assets/index-background-720.png");
    }
 
    .my_img2 {
-      content: url("assets/macbook-pc.png");
+      content: url("/assets/macbook-pc.png");
    }
 
    .my_img3 {
-      content: url("assets/airpods-pc.png");
+      content: url("/assets/airpods-pc.png");
    }
 
 
@@ -1168,7 +1168,7 @@ nav > div {
    .gadget1 {
       width: 60%;
       height: 45%;
-      background-image: url('assets/macbook-pc.png');
+      background-image: url('/assets/macbook-pc.png');
       background-size: cover;
    }
 
@@ -1176,7 +1176,7 @@ nav > div {
       width: 39%;
       height: 45%;
       margin-left: 1%;
-      background-image: url('assets/iphone-blue-square.png');
+      background-image: url('/assets/iphone-blue-square.png');
       background-size: cover;
    }
 
@@ -1184,14 +1184,14 @@ nav > div {
       width: 39%;
       height: 45%;
       margin-right: 1%;
-      background-image: url('assets/airpods-pc.png');
+      background-image: url('/assets/airpods-pc.png');
       background-size: cover;
    }
    
    .gadget4 {
       width: 60%;
       height: 45%;
-      background-image: url('assets/index-background-720.png');
+      background-image: url('/assets/index-background-720.png');
       background-size: cover;
    }
    
