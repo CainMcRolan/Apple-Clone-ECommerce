@@ -375,7 +375,7 @@ body, html {
    
    /* Initial Display */
    .startup_div img {
-      content: url("/../assets/index-background-720.png");
+      content: url("../assets/index-background-720.png");
    }   
 
    
