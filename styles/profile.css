@@ -1,0 +1,602 @@
+@font-face {
+   font-family: 'Bauhaus93';
+   src: url(/assets/fonts/Bauhaus\ 93\ Regular.ttf);
+}
+
+@font-face {
+   font-family: 'Gotham';
+   src: url(/assets/fonts/gotham.otf);
+}
+
+@font-face {
+   font-family: 'GothamThin';
+   src: url(/E-Commerce/assets/fonts/GothamNarrow-Thin.otf);
+}
+
+@font-face {
+   font-family: 'SFPRO';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+   font-family: 'SFPROBOLD';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Bold.ttf);
+}
+
+@font-face {
+   font-family: 'SFPROTHIN';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Light.ttf);
+}
+
+@font-face {
+   font-family: 'Oswald';
+   src: url(/E-Commerce/assets/fonts/Oswald-Bold.ttf);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   width: 100%;
+   overflow-x:hidden;
+   height: 100vh;
+   background-color: white;
+}
+
+/* Navigation Bar */
+
+.pc_navigation {
+   display: none;
+}
+
+.navigation {
+   width: 100%;
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav_image {
+   width: 70%;
+   height: 80%;
+   margin-left: 10%;
+   margin-bottom: 2%;
+}
+
+.navigation > a {
+   width: 2.5em;
+   height: 2.5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0% 0% 0.3em 1em;
+}
+
+nav > div {
+   display: flex;
+   width: 50%;
+   justify-content: space-around;
+   height: 100%;
+   align-items: center;
+}
+
+.container_nav > a, .container_nav div {
+   padding: 11px;
+}
+
+.search_icon { 
+   background-image: url(/E-Commerce/assets/search-icon.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.cart_icon {
+   background-image: url('/E-Commerce/assets/cart.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.user_icon {
+   background-image: url('/E-Commerce/assets/user.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.menu {
+   background-image: url('/E-Commerce/assets/menu.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.search-popup {
+   position: absolute;
+   top: 60px; 
+   right: 20px; 
+   background-color: transparent;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
+   z-index: 1; 
+   display: none;
+ }
+
+.search-popup input {
+   height: 50px;
+   border-radius: 1em;
+ }
+
+.search-toggle {
+   background-color: transparent;
+   opacity: 0;
+   position: absolute;
+}
+ 
+.search-toggle:checked ~ .search-popup {
+   display: block;
+ }
+
+.search-popup input[type="text"] {
+   width: 200px;
+   padding: 6px 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 14px;
+ }
+
+.search_icon {
+   background-image: url('/E-Commerce/assets/search-icon.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 23px; 
+   height: 23px;
+   cursor: pointer; 
+ }
+
+.search_icon:hover {
+   transform: scale(1.3);
+   transition: all 0.5s;
+ }
+
+.sidebar-menu {
+   position: fixed;
+   top: 0;
+   left: -85%;
+   width: 85%;
+   height: 100vh;
+   background-color: #fff;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   transition: left 0.3s ease-in-out;
+   z-index: 1000;
+ }
+
+.menu-toggle {
+   opacity: 0;
+   position: absolute;
+}
+ 
+.menu-toggle:checked ~ .sidebar-menu {
+   left: 0;
+ }
+ 
+.sidebar-menu a {
+   display: block;
+   color: #333;
+   text-decoration: none;
+   padding: 10px;
+   font-size: 18px;
+ }
+ 
+.menu {
+   background-image: url('/E-Commerce/assets/menu.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 30px; 
+   height: 30px;
+   cursor: pointer; 
+
+}
+
+/* Toggle Menu */
+.sidebar-menu input {
+   width: 90%;
+   height: 6%;
+   border-radius: 1em;
+   border: 1px solid rgb(24, 22, 22);
+   padding: 10px;
+}
+
+.sidebar-menu a {
+   margin: 20px 0px;
+   font-family: 'SFPROBOLD';
+}
+
+.sidebar-menu h1 {
+   margin: 20px 0px;
+   font-family: 'SFPROBOLD';
+   color: #797070;
+}
+
+.sidebar-menu b {
+   color: black;
+}
+
+.join, .signin {
+   width: 30%;
+   height: 5%;
+   border-radius: 1em;
+   border: none;
+   font-family: 'SFPRO';
+}
+
+.join {
+   background-color: black;
+   color: white;
+}
+
+.signin {
+   background-color: white;
+   border: 1px solid black;
+}
+
+
+.login {
+   width: 90%;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0px 0px 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.login input {
+   width: 100%;
+   height: 8%;
+   border-radius: 0.825em;
+   border: 1px solid grey;
+   font-size: 16px;
+   padding-left: 10px;
+   margin: 30px 0px;
+}
+
+.login u {
+   color: grey;
+}
+
+.login p {
+   margin: 10px 0px;
+}
+
+#p2 {
+   color: grey;
+}
+
+.login a {
+   text-decoration: none;
+   color: white;
+   background-color: black;
+   width: 35%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 7%;
+   border-radius: 2em;
+   margin-top: 10px;
+}
+
+@media screen and (min-width: 1360px) and (min-height: 720px)  {
+   .pc_navigation {
+      width: 100%;
+      height: 4vh;
+      background-color: rgb(220, 220, 220);
+      display: flex;
+      justify-content: end;
+      align-items: center;
+   }
+
+   .pc_navigation p {
+      font-family: 'SFPRO';
+      font-size: 13px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+   }
+
+   .pc_navigation p:hover {
+      color: grey;
+   }
+
+   .navigation {
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+   }
+   
+   .nav_image {
+      width: 70%;
+      height: 80%;
+      margin-left: 10%;
+      margin-bottom: 2%;
+   }
+   
+
+   .navigation > a {
+      width: 2em;
+      height: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1em;
+   }
+
+
+   nav > div {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      height: 100%;
+      align-items: center;
+   }
+
+   .container_nav {
+      width: 20%;
+   }
+   
+   .container_nav > a, .container_nav div {
+      padding: 11px;
+   }
+   
+   .search_icon { 
+      background-image: url(/E-Commerce/assets/search-icon.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .cart_icon {
+      background-image: url('/E-Commerce/assets/cart.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .user_icon {
+      background-image: url('/E-Commerce/assets/user.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .menu {
+      background-image: url('/E-Commerce/assets/menu.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .search-popup {
+      position: absolute;
+      top: 100%; 
+      right: 38%; 
+      background-color: transparent;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
+      z-index: 1; 
+      display: none;
+    }
+   
+   .search-popup input {
+      height: 50px;
+      border-radius: 1em;
+    }
+   
+   .search-toggle {
+      background-color: transparent;
+      opacity: 0;
+      position: absolute;
+   }
+    
+   .search-toggle:checked ~ .search-popup {
+      display: block;
+    }
+   
+   .search-popup input[type="text"] {
+      width: 300px;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 12px;
+      height: 30px;
+    }
+   
+   .search_icon {
+      background-image: url('/E-Commerce/assets/search-icon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 23px; 
+      height: 23px;
+      cursor: pointer; 
+    }
+   
+   .search_icon:hover, .cart_icon:hover, .user_icon:hover, .menu:hover, .nav_image:hover {
+      transform: scale(1.1);
+      transform: rotate(360deg);
+      transition: all 0.5s;
+    }
+   
+   .sidebar-menu {
+      position: fixed;
+      top: -100%;
+      left: 0%;
+      width: 100%;
+      height: 88vh;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+    }
+   
+   .menu-toggle {
+      opacity: 0;
+      position: absolute;
+   }
+    
+   .menu-toggle:checked ~ .sidebar-menu {
+      top: 12%;
+    }
+    
+   .sidebar-menu a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
+    }
+    
+    .sidebar-menu a:hover {
+      text-decoration: underline;
+    }
+    
+   .menu {
+      background-image: url('/E-Commerce/assets/menu.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 30px; 
+      height: 30px;
+      cursor: pointer; 
+   }
+   
+   /* Toggle Menu */
+   .sidebar-menu input {
+      width: 100%;
+      height: 6%;
+      border-radius: 1em;
+      border: 1px solid rgb(24, 22, 22);
+      padding: 10px;
+   }
+   
+   .sidebar-menu a {
+      margin: 20px 0px;
+      font-family: 'SFPROBOLD';
+   }
+   
+   .sidebar-menu h1 {
+      margin: 20px 0px;
+      font-family: 'SFPROBOLD';
+      color: #797070;
+   }
+   
+   .sidebar-menu b {
+      color: black;
+   }
+   
+   .join, .signin {
+      width: 5%;
+      height: 5%;
+      border-radius: 1em;
+      border: none;
+      font-family: 'SFPRO';
+      cursor: pointer;
+      transition: all 0.5s;
+   }
+
+   .join:hover {
+      background-color: white;
+      color: black;
+   }
+
+   .signin:hover {
+      background-color: black;
+      color: white;
+   }
+   
+   .join {
+      background-color: black;
+      color: white;
+   }
+   
+   .signin {
+      background-color: white;
+      border: 1px solid black;
+   }
+   
+
+   
+.login {
+   width: 90%;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+   margin: 100px 0px 0px 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.login input {
+   width: 80%;
+   height: 8%;
+   border-radius: 0.825em;
+   border: 1px solid grey;
+   font-size: 16px;
+   padding-left: 10px;
+   margin: 30px 0px;
+}
+
+.login u {
+   color: grey;
+   cursor: pointer;
+   transition: all 0.5s;
+}
+
+.login u:hover {
+   color: black;
+}
+
+.login p {
+   margin: 10px 0px;
+}
+
+#p2 {
+   color: grey;
+}
+
+.login a {
+   text-decoration: none;
+   color: white;
+   background-color: black;
+   width: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 7%;
+   border-radius: 2em;
+   margin-top: 10px;
+   transition: all 0.5s;
+}
+
+.continue:hover {
+   background-color: rgb(29, 27, 27);
+}
+}
+
+@media screen and (min-width: 1920px) and (min-height: 930px) {
+   .search-popup {
+      position: absolute;
+      top: 100%; 
+      right: 37%; 
+    }
+
+    .search-popup input[type="text"] {
+      width: 500px;
+      height: 40px;
+    }
+}

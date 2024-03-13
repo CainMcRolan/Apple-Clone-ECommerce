@@ -1,0 +1,1624 @@
+@font-face {
+   font-family: 'Bauhaus93';
+   src: url(/assets/fonts/Bauhaus\ 93\ Regular.ttf);
+}
+
+@font-face {
+   font-family: 'Gotham';
+   src: url(/assets/fonts/gotham.otf);
+}
+
+@font-face {
+   font-family: 'GothamThin';
+   src: url(/E-Commerce/assets/fonts/GothamNarrow-Thin.otf);
+}
+
+@font-face {
+   font-family: 'SFPRO';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+   font-family: 'SFPROBOLD';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Bold.ttf);
+}
+
+@font-face {
+   font-family: 'SFPROTHIN';
+   src: url(/E-Commerce/assets/fonts/SF-Pro-Display-Light.ttf);
+}
+
+@font-face {
+   font-family: 'Oswald';
+   src: url(/E-Commerce/assets/fonts/Oswald-Bold.ttf);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   width: 100%;
+   overflow-x:hidden;
+   height: 100vh;
+   background-color: white;
+   scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.pc_navigation {
+   display: none;
+}
+
+.navigation {
+   width: 100%;
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav_image {
+   width: 70%;
+   height: 80%;
+   margin-left: 10%;
+   margin-bottom: 2%;
+}
+
+.navigation > a {
+   width: 2.5em;
+   height: 2.5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0% 0% 0.3em 1em;
+}
+
+nav > div {
+   display: flex;
+   width: 50%;
+   justify-content: space-around;
+   height: 100%;
+   align-items: center;
+}
+
+.container_nav > a, .container_nav div {
+   padding: 11px;
+}
+
+.search_icon { 
+   background-image: url(/E-Commerce/assets/search-icon.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.cart_icon {
+   background-image: url('/E-Commerce/assets/cart.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.user_icon {
+   background-image: url('/E-Commerce/assets/user.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.menu {
+   background-image: url('/E-Commerce/assets/menu.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.search-popup {
+   position: absolute;
+   top: 60px; 
+   right: 20px; 
+   background-color: transparent;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
+   z-index: 1; 
+   display: none;
+ }
+
+.search-popup input {
+   height: 50px;
+   border-radius: 1em;
+ }
+
+.search-toggle {
+   background-color: transparent;
+   opacity: 0;
+   position: absolute;
+}
+ 
+.search-toggle:checked ~ .search-popup {
+   display: block;
+ }
+
+.search-popup input[type="text"] {
+   width: 200px;
+   padding: 6px 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 14px;
+ }
+
+.search_icon {
+   background-image: url('/E-Commerce/assets/search-icon.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 23px; 
+   height: 23px;
+   cursor: pointer; 
+ }
+
+.search_icon:hover {
+   transform: scale(1.3);
+   transition: all 0.5s;
+ }
+
+.sidebar-menu {
+   position: fixed;
+   top: 0;
+   left: -85%;
+   width: 85%;
+   height: 100vh;
+   background-color: #fff;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   transition: left 0.3s ease-in-out;
+   z-index: 1000;
+ }
+
+.menu-toggle {
+   opacity: 0;
+   position: absolute;
+}
+ 
+.menu-toggle:checked ~ .sidebar-menu {
+   left: 0;
+ }
+ 
+.sidebar-menu a {
+   display: block;
+   color: #333;
+   text-decoration: none;
+   padding: 10px;
+   font-size: 18px;
+ }
+ 
+.menu {
+   background-image: url('/E-Commerce/assets/menu.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 30px; 
+   height: 30px;
+   cursor: pointer; 
+
+}
+
+/* Toggle Menu */
+.sidebar-menu input {
+   width: 90%;
+   height: 6%;
+   border-radius: 1em;
+   border: 1px solid rgb(24, 22, 22);
+   padding: 10px;
+}
+
+.sidebar-menu a {
+   margin: 20px 0px;
+   font-family: 'SFPROBOLD';
+}
+
+.sidebar-menu h1 {
+   margin: 20px 0px;
+   font-family: 'SFPROBOLD';
+   color: #797070;
+}
+
+.sidebar-menu b {
+   color: black;
+}
+
+.join, .signin {
+   width: 30%;
+   height: 5%;
+   border-radius: 1em;
+   border: none;
+   font-family: 'SFPRO';
+}
+
+.join {
+   background-color: black;
+   color: white;
+}
+
+.signin {
+   background-color: white;
+   border: 1px solid black;
+}
+
+
+/* section 2 */
+.my_title {
+   width: 90%;
+   margin-left: 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.my_title h1 {
+   margin-top: 50px;
+   font-size: 30px;
+}
+
+.my_title h2 {
+   font-size: 18px;
+   margin: 5px 0px 20px 0px;
+   color: grey;
+}
+
+.my_title h3 {
+   margin: 0px 0px 20px 0px;
+}
+
+/* * Slider - Section 3 */ 
+
+.my_slider {
+	position: relative;
+	overflow: hidden;
+	height: 85vh; 
+}
+
+.my_slider .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+.my_slider .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+  
+}
+
+.my_slider .slider > div > img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.my_slider .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.my_slider .prevNext > div+div {
+	visibility: hidden; 
+}
+
+.my_slider .prevNext a {
+   font-size: 30px;
+   font-weight: bold;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px;
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+   color: white;
+}
+.my_slider .prevNext a:hover {
+	opacity: 1;
+}
+.my_slider .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+.my_slider >s:target ~ .prevNext >* {      visibility: hidden;}
+
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+
+.my_slider{
+	color: #fff;	
+	text-align: center;
+}
+
+.my_slider .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.my_slider a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+/* Fourth Section */
+.variations {
+   width: 100%;
+   height: 25vh;
+   display: flex;
+   align-items: center;
+   overflow: auto; 
+}
+
+.color {
+   background-color: white;
+   border: 1px solid rgb(250, 250, 250);
+   height: 90%;
+   width: 50%; 
+   margin-right: 10px;
+   flex: 0 0 auto; 
+ 
+}
+
+.color img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border: 1px solid rgb(250, 250, 250);
+   border-radius: 0.5em;
+}
+
+.hr1 {
+   margin: 15px 0px;
+}
+
+/* fifth section */
+.device {
+   width: 90%;
+   height: 70vh;
+   margin-left: 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.p2s {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+}
+
+.devices{
+   width: 100%;
+   height: 20%;
+   background-color: rgb(250, 250, 250);
+   margin: 10px 0px;
+   border: 1px solid grey;
+   border-radius: 0.8em;
+   font-size: 9px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.devices > * {
+   margin-left: 10px;
+}
+
+.devices p {
+   font-family: SFPROTHIN;
+}
+
+.device_1 {
+   border: 2px solid #007aff;
+}
+
+.details {
+   width: 100%;
+   height: 20%;
+   background-color: rgb(250, 250, 250);
+   margin: 10px 0px;
+   border: none;
+   border-radius: 0.8em;
+   font-size: 11px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.details  > * {
+   margin-left: 10px;
+   font-size: 15px;
+}
+
+.details p {
+   font-family: 'SFPROTHIN';
+}
+
+.productdev {
+   font-family: SFPRO;
+}
+
+.alltime {
+   font-family: SFPROTHIN;
+   font-size: 15px;
+}
+
+/* Sixth Section */
+.storage{
+   width: 90%;
+   margin-left: 5%;
+   height: 40vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'SFPROBOLD';
+}
+
+.storage > h1 {
+   font-size: 30px;
+}
+
+.storage p {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+   margin: 5px 0px 10px 0px;
+}
+
+
+.storage_container {
+   width: 100%;
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.store_1, .store_2 {
+   width: 100%;
+   margin: 10px 0px;
+   height: 40%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.store_1_1, .store_1_2, .store_2_1, .store_2_2 {
+   border: 1px solid grey;
+   width: 48%;
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0.8em;
+}
+
+.store_1_1 {
+   border:  2px solid #007aff;
+}
+
+
+/* Seventh Section */
+.select_color {
+   width: 90%;
+   margin-left: 5%;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'SFPROBOLD';
+}
+
+.select_color > h1 {
+   font-size: 30px;
+}
+
+.select_color p {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+   margin: 5px 0px 10px 0px;
+}
+
+.color_display {
+   width: 100%;
+   height: 50vh;
+   display: flex;
+}
+
+.color_display > img {
+   width: 49%;
+   height: 100%;
+   object-fit: cover;
+   margin-right: 2%;
+   border-radius: 0.5em;
+}
+
+.color_display_extra {
+   width: 48%;
+   height: 100%;
+   object-fit: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.color_display_extra > img {
+   width: 100%;
+   height: 49%;
+   border-radius: 0.5em;
+}
+
+#extra_image1 {
+   height: 40%;
+}
+
+#extra_image2 {
+   height: 59%;
+}
+
+.color_options {
+   margin: 30px 0px;
+   width: 100%;
+   height: 12vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.color_option {
+   width: 20%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.color_opt {
+   width: 100%;
+   height: 70%;
+   border-radius: 100%;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.color_opt:hover {
+   border: 2px solid #007aff;
+   transform: translateY(-5%);
+}
+
+.color_option p {
+   font-size: 12px;
+   text-align: center;
+}
+
+#color_black {
+   background-color: black;
+}
+
+#color_gold {
+   background-color: gold;
+   border: 2px solid #007aff;
+}
+
+#color_blue {
+   background-color: aqua;
+}
+
+#color_silver {
+   background-color: silver;
+}
+
+.key_features {
+   font-family: 'SFPROBOLD';
+   width: 100%;
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 12px;
+}
+
+.key_features p, .key_features h1 {
+   margin: 0px 15px;
+}
+
+/* Another SEction */
+.my_product_slider {
+   width: 100%;
+   height: 55vh;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
+}
+
+.my_product_slider > h1 {
+   margin: 10px;
+   font-family: 'SFPROBOLD';
+}
+
+.slider_transfer {
+   display: flex;
+   height: 90%;
+   width: 95%;
+   margin: 0px 10px;
+   overflow: auto;
+   justify-content: left;
+   align-items: center;
+   scrollbar-width: none;
+}
+
+.product_transfer {
+   background-color: white;
+   height: 100%;
+   margin-right: 10px;
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+}
+
+.product_transfer img {
+   border-radius: 0.825em;
+   height: 100%;
+   object-fit: cover;
+}
+
+.product_transfer > a {
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   font-family: 'SFPROBOLD';
+   margin: 5px 10px;
+}
+
+/* Footer */
+.footer {
+   height: 70vh;
+   width: 100%;
+   margin-top: 5vh;
+   background-color: #0a0a0a;
+   color: white;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 10px 10px 10px;
+}
+
+.container a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Oswald';
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+
+.help, .company {
+   display: flex;
+   font-size: 8px;
+   font-family: 'Oswald';
+   width: 98%;
+   justify-content: space-between;
+   margin: 10px 0px 20px 0px;
+}
+
+.help > h2, .company > h2 {
+   font-size: 20px;
+}
+
+.logos {
+   display: flex;
+   margin: 0px 5px 5px 10px;
+}
+
+.logos div {
+   margin-right:20px;
+   background-color: grey;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.inc {
+   color: rgb(92, 88, 88);
+   font-size: 13px;
+   font-family: 'SFPRO';
+   margin: 10px;
+}
+
+.extra {
+   color: rgb(92, 88, 88);
+   font-size: 13px;
+   font-family: 'SFPRO';
+   margin: 10px;
+}
+
+.extra p {
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+@media screen and (min-width: 1360px) and (min-height: 720px) {
+   .pc_navigation {
+      width: 100%;
+      height: 4vh;
+      background-color: rgb(220, 220, 220);
+      display: flex;
+      justify-content: end;
+      align-items: center;
+   }
+
+   .pc_navigation p {
+      font-family: 'SFPRO';
+      font-size: 13px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+   }
+
+   .pc_navigation p:hover {
+      color: grey;
+   }
+
+   .navigation {
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+   }
+   
+   .nav_image {
+      width: 70%;
+      height: 80%;
+      margin-left: 10%;
+      margin-bottom: 2%;
+   }
+   
+
+   .navigation > a {
+      width: 2em;
+      height: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1em;
+   }
+
+
+   nav > div {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      height: 100%;
+      align-items: center;
+   }
+
+   .container_nav {
+      width: 20%;
+   }
+   
+   .container_nav > a, .container_nav div {
+      padding: 11px;
+   }
+   
+   .search_icon { 
+      background-image: url(/E-Commerce/assets/search-icon.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .cart_icon {
+      background-image: url('/E-Commerce/assets/cart.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .user_icon {
+      background-image: url('/E-Commerce/assets/user.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .menu {
+      background-image: url('/E-Commerce/assets/menu.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .search-popup {
+      position: absolute;
+      top: 100%; 
+      right: 38%; 
+      background-color: transparent;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
+      z-index: 1; 
+      display: none;
+    }
+   
+   .search-popup input {
+      height: 50px;
+      border-radius: 1em;
+    }
+   
+   .search-toggle {
+      background-color: transparent;
+      opacity: 0;
+      position: absolute;
+   }
+    
+   .search-toggle:checked ~ .search-popup {
+      display: block;
+    }
+   
+   .search-popup input[type="text"] {
+      width: 300px;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 12px;
+      height: 30px;
+    }
+   
+   .search_icon {
+      background-image: url('/E-Commerce/assets/search-icon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 23px; 
+      height: 23px;
+      cursor: pointer; 
+    }
+   
+   .search_icon:hover, .cart_icon:hover, .user_icon:hover, .menu:hover, .nav_image:hover {
+      transform: scale(1.1);
+      transform: rotate(360deg);
+      transition: all 0.5s;
+    }
+   
+   .sidebar-menu {
+      position: fixed;
+      top: -100%;
+      left: 0%;
+      width: 100%;
+      height: 88vh;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      z-index: 1000;
+    }
+   
+   .menu-toggle {
+      opacity: 0;
+      position: absolute;
+   }
+    
+   .menu-toggle:checked ~ .sidebar-menu {
+      top: 12%;
+    }
+    
+   .sidebar-menu a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
+    }
+    
+    .sidebar-menu a:hover {
+      text-decoration: underline;
+    }
+    
+   .menu {
+      background-image: url('/E-Commerce/assets/menu.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 30px; 
+      height: 30px;
+      cursor: pointer; 
+   }
+   
+   /* Toggle Menu */
+   .sidebar-menu input {
+      width: 100%;
+      height: 6%;
+      border-radius: 1em;
+      border: 1px solid rgb(24, 22, 22);
+      padding: 10px;
+   }
+   
+   .sidebar-menu a {
+      margin: 20px 0px;
+      font-family: 'SFPROBOLD';
+   }
+   
+   .sidebar-menu h1 {
+      margin: 20px 0px;
+      font-family: 'SFPROBOLD';
+      color: #797070;
+   }
+   
+   .sidebar-menu b {
+      color: black;
+   }
+   
+   .join, .signin {
+      width: 5%;
+      height: 5%;
+      border-radius: 1em;
+      border: none;
+      font-family: 'SFPRO';
+      cursor: pointer;
+      transition: all 0.5s;
+   }
+
+   .join:hover {
+      background-color: white;
+      color: black;
+   }
+
+   .signin:hover {
+      background-color: black;
+      color: white;
+   }
+   
+   .join {
+      background-color: black;
+      color: white;
+   }
+   
+   .signin {
+      background-color: white;
+      border: 1px solid black;
+   }
+
+   /* section 2 */
+.my_title {
+   width: 90%;
+   margin-left: 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.my_title h1 {
+   margin-top: 50px;
+   font-size: 30px;
+}
+
+.my_title h2 {
+   font-size: 18px;
+   margin: 5px 0px 20px 0px;
+   color: grey;
+}
+
+.my_title h3 {
+   margin: 0px 0px 20px 0px;
+}
+
+/* * Slider - Section 3 */ 
+
+.my_slider {
+	position: relative;
+	overflow: hidden;
+	height: 100vh; 
+}
+
+.my_slider .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+.myimg_1 {
+   content: url("/E-Commerce/assets/iphone-black-pc.png");
+}
+
+.myimg_2 {
+   content: url("/E-Commerce/assets/iphone-gold-pc.png");
+}
+
+
+.myimg_3 {
+   content: url("/E-Commerce/assets/iphone-blue-pc.png");
+}
+
+.my_slider .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+  
+}
+
+.my_slider .slider > div > img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.my_slider .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.my_slider .prevNext > div+div {
+	visibility: hidden; 
+}
+
+.my_slider .prevNext a {
+   font-size: 30px;
+   font-weight: bold;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px;
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+   color: white;
+}
+.my_slider .prevNext a:hover {
+	opacity: 1;
+}
+.my_slider .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+.my_slider >s:target ~ .prevNext >* {      visibility: hidden;}
+
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+
+.my_slider{
+	color: #fff;	
+	text-align: center;
+}
+
+.my_slider .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.my_slider a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+/* Fourth Section */
+.variations {
+   width: 100%;
+   height: 40vh;
+   display: flex;
+   align-items: center;
+   overflow: auto; 
+   justify-content: center;
+}
+
+.color {
+   background-color: white;
+   border: 1px solid rgb(250, 250, 250);
+   height: 90%;
+   width: 20%; 
+   margin-right: 10px;
+   flex: 0 0 auto; 
+   position: relative;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
+.color::before {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-size: 1em;
+   font-family: 'SFPROBOLD';
+   opacity: 0;
+   transition: all 1s;
+}
+
+.color1::before {
+   content: 'Graphite Black';
+}
+
+.color2::before {
+   content: 'Rose Gold';
+}
+
+.color3::before {
+   content: 'Aqua Blue';
+}
+
+
+.color:hover::before {
+   opacity: 1;
+}
+
+.color:hover {
+   transform: translateY(-3%);
+}
+
+.color img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border: 1px solid rgb(250, 250, 250);
+   border-radius: 0.5em;
+}
+
+.hr1 {
+   margin: 15px 0px;
+}
+
+/* fifth section */
+.device {
+   width: 90%;
+   height: 60vh;
+   margin-left: 5%;
+   font-family: 'SFPROBOLD';
+}
+
+.p2s {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+}
+
+.devices{
+   width: 100%;
+   height: 20%;
+   background-color: rgb(250, 250, 250);
+   margin: 10px 0px;
+   border: 1px solid grey;
+   border-radius: 0.8em;
+   font-size: 9px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.devices:hover {
+   border: 2px solid #007aff;
+}
+
+.devices > * {
+   margin-left: 10px;
+}
+
+.devices p {
+   font-family: SFPROTHIN;
+}
+
+.device_1 {
+   border: 2px solid #007aff;
+}
+
+.details {
+   width: 100%;
+   height: 20%;
+   background-color: rgb(250, 250, 250);
+   margin: 10px 0px;
+   border: none;
+   border-radius: 0.8em;
+   font-size: 11px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.details  > * {
+   margin-left: 10px;
+   font-size: 15px;
+}
+
+.details p {
+   font-family: 'SFPROTHIN';
+}
+
+.productdev {
+   font-family: SFPRO;
+   margin-top: 10px;
+}
+
+.alltime {
+   font-family: SFPROTHIN;
+   font-size: 15px;
+}
+
+/* Sixth Section */
+.storage{
+   width: 90%;
+   margin-left: 5%;
+   height: 40vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'SFPROBOLD';
+}
+
+.store_1_1:hover, .store_1_2:hover, .store_2_1:hover, .store_2_2:hover {
+   border: 2px solid #007aff;
+   cursor: pointer;
+}
+
+
+
+.storage > h1 {
+   font-size: 30px;
+}
+
+.storage p {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+   margin: 5px 0px 10px 0px;
+}
+
+
+.storage_container {
+   width: 100%;
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.store_1, .store_2 {
+   width: 100%;
+   margin: 10px 0px;
+   height: 40%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.store_1_1, .store_1_2, .store_2_1, .store_2_2 {
+   border: 1px solid grey;
+   width: 48%;
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0.8em;
+}
+
+.store_1_1 {
+   border:  2px solid #007aff;
+}
+
+
+/* Seventh Section */
+.select_color {
+   width: 90%;
+   margin-left: 5%;
+   height: 120vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'SFPROBOLD';
+}
+
+.select_color > h1 {
+   font-size: 30px;
+}
+
+.select_color p {
+   color: grey;
+   font-size: 13px;
+   font-family: 'SFPROTHIN';
+   margin: 5px 0px 10px 0px;
+}
+
+.color_display {
+   width: 100%;
+   height: 90vh;
+   display: flex;
+}
+
+.color_display > img {
+   width: 49%;
+   height: 100%;
+   object-fit: cover;
+   margin-right: 2%;
+   border-radius: 0.5em;
+}
+
+.color_display_extra {
+   width: 48%;
+   height: 100%;
+   object-fit: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.color_display_extra > img {
+   width: 100%;
+   height: 49%;
+   border-radius: 0.5em
+}
+
+#extra_image1 {
+   height: 40%;
+}
+
+#extra_image2 {
+   height: 59%;
+   content: url("/E-Commerce/assets/iphone-gold-pc-1.png");
+}
+
+.color_options {
+   margin: 30px 0px;
+   width: 100%;
+   height: 12vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.color_option {
+   width: 20%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.color_opt {
+   width: 23%;
+   height: 70%;
+   border-radius: 100%;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.color_opt:hover {
+   border: 2px solid #007aff;
+   transform: translateY(-5%);
+}
+
+.color_option p {
+   font-size: 12px;
+   text-align: center;
+}
+
+#color_black {
+   background-color: black;
+}
+
+#color_gold {
+   background-color: gold;
+   border: 2px solid #007aff;
+}
+
+#color_blue {
+   background-color: aqua;
+}
+
+#color_silver {
+   background-color: silver;
+}
+
+.key_features {
+   font-family: 'SFPROBOLD';
+   width: 100%;
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 8px;
+}
+
+.key_features p, .key_features h1 {
+   margin: 0px 15px;
+}
+
+/* Another SEction */
+.my_product_slider {
+   width: 100%;
+   height: 55vh;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.my_product_slider > h1 {
+   margin: 10px;
+   font-family: 'SFPROTHIN';
+}
+
+.slider_transfer {
+   display: flex;
+   height: 90%;
+   width: 90%;
+   margin: 0px 10px;
+   overflow: auto;
+   justify-content: left;
+   align-items: center;
+   scrollbar-width: none;
+}
+
+.product_transfer {
+   background-color: white;
+   height: 100%;
+   margin-right: 10px;
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+   cursor: pointer;
+   overflow: hidden;
+   border-radius: 0.825em;
+}
+
+.product_transfer img {
+   border-radius: 0.825em;
+   height: 100%;
+   object-fit: cover;
+   transition: all 0.5s;
+}
+
+.product_transfer:hover img {
+   transform: scale(1.4);
+}
+
+.product_transfer:hover a {
+   transform: translateY(-30%);
+   font-size: 25px;
+   color: white;
+}
+
+.product_transfer > a {
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   font-family: 'SFPROBOLD';
+   margin: 5px 10px;
+   transition: all 0.5s;
+}
+
+/* Footer */
+.footer {
+   margin-top: 5vh;
+   height: 70vh;
+   width: 100%;
+   background-color: #0a0a0a;
+   color: white;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 10px 10px 30px;
+}
+
+.container a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Oswald';
+   font-size: 12px;
+   margin-bottom: 10px;
+}
+
+.help, .company {
+   display: flex;
+   font-size: 8px;
+   font-family: 'Oswald';
+   width: 98%;
+   justify-content: space-between;
+   margin: 10px 0px 20px 0px;
+}
+
+.help > h2, .company > h2 {
+   font-size: 20px;
+}
+
+.logos {
+   display: flex;
+   margin: 0px 5px 5px 30px;
+}
+
+.logos div {
+   margin-right:20px;
+   background-color: grey;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.inc {
+   color: rgb(92, 88, 88);
+   font-size: 13px;
+   font-family: 'SFPRO';
+   margin: 10px 10px 10px 30px;
+}
+
+.extra {
+   color: rgb(92, 88, 88);
+   font-size: 13px;
+   font-family: 'SFPRO';
+   margin: 10px 10px 10px 30px;
+}
+
+.extra p {
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.search-popup {
+   position: absolute;
+   top: 100%; 
+   right: 37%; 
+ }
+
+ .search-popup input[type="text"] {
+   width: 500px;
+   height: 40px;
+ }
+}
