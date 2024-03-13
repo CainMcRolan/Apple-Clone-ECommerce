@@ -1,36 +1,36 @@
 @font-face {
    font-family: 'Bauhaus93';
-   src: url(/assets/fonts/Bauhaus\ 93\ Regular.ttf);
+   src: url(assets/fonts/Bauhaus\ 93\ Regular.ttf);
 }
 
 @font-face {
    font-family: 'Gotham';
-   src: url(/assets/fonts/gotham.otf);
+   src: url(assets/fonts/gotham.otf);
 }
 
 @font-face {
    font-family: 'GothamThin';
-   src: url(/assets/fonts/GothamNarrow-Thin.otf);
+   src: url(assets/fonts/GothamNarrow-Thin.otf);
 }
 
 @font-face {
    font-family: 'SFPRO';
-   src: url(/assets/fonts/SF-Pro-Display-Regular.otf);
+   src: url(assets/fonts/SF-Pro-Display-Regular.otf);
 }
 
 @font-face {
    font-family: 'SFPROBOLD';
-   src: url(/assets/fonts/SF-Pro-Display-Bold.ttf);
+   src: url(assets/fonts/SF-Pro-Display-Bold.ttf);
 }
 
 @font-face {
    font-family: 'SFPROTHIN';
-   src: url(/assets/fonts/SF-Pro-Display-Light.ttf);
+   src: url(assets/fonts/SF-Pro-Display-Light.ttf);
 }
 
 @font-face {
    font-family: 'Oswald';
-   src: url(/assets/fonts/Oswald-Bold.ttf);
+   src: url(assets/fonts/Oswald-Bold.ttf);
 }
 
 
@@ -375,7 +375,7 @@ body, html {
    
    /* Initial Display */
    .startup_div img {
-      content: url("/assets/index-background-720.png");
+      content: url("assets/index-background-720.png");
    }   
 
    .startup_div {
@@ -608,7 +608,7 @@ body, html {
    .news0 {
       width: 60%;
       height: 50%;
-      background-image: url('/assets/iphone-blue-square.png');
+      background-image: url('assets/iphone-blue-square.png');
       background-size: cover;
    }
 
@@ -616,7 +616,7 @@ body, html {
       width: 38%;
       height: 50%;
       margin-left: 2%;
-      background-image: url('/assets/iphone-gold-2.png');
+      background-image: url('assets/iphone-gold-2.png');
       background-size: cover;
    }
 
@@ -624,14 +624,14 @@ body, html {
       width: 38%;
       height: 50%;
       margin-right: 2%;
-      background-image: url('/assets/airpods-square.png');
+      background-image: url('assets/airpods-square.png');
       background-size: cover;
    }
 
    .news3 {
       width: 60%;
       height: 50%;
-      background-image: url('/assets/index-background-720.png');
+      background-image: url('assets/index-background-720.png');
       background-size: cover;
    }
 
