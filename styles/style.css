@@ -376,6 +376,8 @@ body, html {
    /* Initial Display */
    .startup_div img {
       content: url("../assets/index-background-720.png");
+      animation: startanim 1s ease forwards;
+
    }   
 
    
@@ -383,6 +385,7 @@ body, html {
    .startup_div {
       height: 100vh;
       text-align: left; 
+      background-color: black;
    }
 
   #donut_background, #donut_transparent{
@@ -401,7 +404,7 @@ body, html {
    .headline_top, .introduction, .headline_bot {
       color: white;
       position: absolute;
-      animation: startanim 1s ease 1s forwards;
+      animation: startanim 1s ease forwards;
    }
 
    @keyframes startanim {

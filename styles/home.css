@@ -717,6 +717,7 @@ nav > div {
       display: flex;
       justify-content: end;
       align-items: center;
+      animation: startanim 1s ease forwards;
    }
 
    .pc_navigation p {
@@ -725,6 +726,7 @@ nav > div {
       margin-right: 10px;
       cursor: pointer;
       transition: all 0.2s;
+      animation: startanim 1s ease forwards;
    }
 
    .pc_navigation p:hover {
@@ -748,6 +750,7 @@ nav > div {
       height: 80%;
       margin-left: 10%;
       margin-bottom: 2%;
+      animation: startanim 1s ease forwards;
    }
    
 
@@ -758,6 +761,7 @@ nav > div {
       align-items: center;
       justify-content: center;
       margin-right: 1em;
+      animation: startanim 1s ease forwards;
    }
 
 
@@ -781,24 +785,28 @@ nav > div {
       background-image: url(../assets/search-icon.png);
       background-size: cover;
       background-repeat: no-repeat;
+      animation: startanim 1s ease forwards;
    }
    
    .cart_icon {
       background-image: url('../assets/cart.png');
       background-size: cover;
       background-repeat: no-repeat;
+      animation: startanim 1s ease forwards;
    }
    
    .user_icon {
       background-image: url('../assets/user.png');
       background-size: cover;
       background-repeat: no-repeat;
+      animation: startanim 1s ease forwards;
    }
    
    .menu {
       background-image: url('../assets/menu.png');
       background-size: cover;
       background-repeat: no-repeat;
+      animation: startanim 1s ease forwards;
    }
    
    .search-popup {
@@ -812,6 +820,7 @@ nav > div {
       box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
       z-index: 1; 
       display: none;
+      animation: none;
     }
    
    .search-popup input {
@@ -957,6 +966,7 @@ nav > div {
       position: relative;
       overflow: hidden;
       height: 88vh; 
+      animation: startanim 1s ease forwards;
    }
    
    .my_image_slider .slider {
@@ -1163,6 +1173,13 @@ nav > div {
       margin-bottom: 10px;
       display: flex;
       align-items: center;
+      transition: all 0.5s;
+   }
+
+   .gadget:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: 5px 5px 5px rgb(15, 15, 15);
    }
 
    .gadget1 {
@@ -1488,4 +1505,15 @@ nav > div {
       width: 500px;
       height: 40px;
     }
+}
+
+@keyframes startanim {
+   0% {
+      transform: translateY(100%);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0);
+      opacity: 1;
+   }
 }

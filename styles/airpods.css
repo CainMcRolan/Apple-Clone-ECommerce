@@ -1010,26 +1010,30 @@ nav > div {
    }
 
    /* section 2 */
-.my_title {
-   width: 90%;
-   margin-left: 5%;
-   font-family: 'SFPROBOLD';
-}
-
-.my_title h1 {
-   margin-top: 50px;
-   font-size: 30px;
-}
-
-.my_title h2 {
-   font-size: 18px;
-   margin: 5px 0px 20px 0px;
-   color: grey;
-}
-
-.my_title h3 {
-   margin: 0px 0px 20px 0px;
-}
+   .my_title {
+      width: 90%;
+      margin-left: 5%;
+      font-family: 'SFPROBOLD';
+      animation: startanim2 1s ease forwards;
+   }
+   
+   .my_title h1 {
+      margin-top: 50px;
+      font-size: 30px;
+      animation: startanim2 1s ease forwards;
+   }
+   
+   .my_title h2 {
+      font-size: 18px;
+      margin: 5px 0px 20px 0px;
+      color: grey;
+      animation: startanim2 1s ease forwards;
+   }
+   
+   .my_title h3 {
+      margin: 0px 0px 20px 0px;
+      animation: startanim2 1s ease forwards;
+   }
 
 /* * Slider - Section 3 */ 
 
@@ -1037,7 +1041,21 @@ nav > div {
 	position: relative;
 	overflow: hidden;
 	height: 100vh; 
+   animation: startanim2 0.7s ease forwards;
+   background-color: black;
 }
+
+@keyframes startanim2 {
+   0% {
+       transform: translateY(100%);
+       opacity: 0;
+   }
+   100% {
+       transform: translateY(0);
+       opacity: 1;
+   }
+}
+
 
 .my_slider .slider {
 	height: 100%;
