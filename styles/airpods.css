@@ -1195,15 +1195,15 @@ nav > div {
 }
 
 .color1::before {
-   content: 'Graphite Black';
+   content: 'Ash Silver';
 }
 
 .color2::before {
-   content: 'Rose Gold';
+   content: 'Aqua Blue';
 }
 
 .color3::before {
-   content: 'Aqua Blue';
+   content: 'Shy Pink';
 }
 
 
