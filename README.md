@@ -4,6 +4,10 @@ Welcome to **Apple-Clone-ECommerce**, a modern and sophisticated eCommerce platf
 
 ![Apple-Clone-ECommerce](https://via.placeholder.com/800x400.png?text=Apple-Clone-ECommerce)
 
+## 🚀 Demo
+
+Check out the live demo of the project [here]([https://example.com](https://cainmcrolan.github.io/Apple-Clone-ECommerce).
+
 ## 📋 Table of Contents
 
 - [Features](#-features)
@@ -22,9 +26,4 @@ Welcome to **Apple-Clone-ECommerce**, a modern and sophisticated eCommerce platf
 - **Product Details**: Detailed view of each product.
 - **Shopping Cart**: Add, remove, and manage products in your cart.
 - **Checkout Process**: Secure and user-friendly checkout experience.
-- **User Authentication**: Register and log in to manage orders.
-- **Admin Dashboard**: Manage products, orders, and users.
 
-## 🚀 Demo
-
-Check out the live demo of the project [here](https://example.com).
