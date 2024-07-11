@@ -2,7 +2,7 @@
 
 Welcome to **Apple-Clone-ECommerce**, a modern and sophisticated eCommerce platform inspired by Apple's website. This project showcases sleek design, innovative features, and seamless user experience, making it a perfect starting point for any tech-oriented online store.
 
-![Apple-Clone-ECommerce](https://via.placeholder.com/800x400.png?text=Apple-Clone-ECommerce)
+![Apple-Clone-ECommerce](screenshots/home.png)
 
 ## 🚀 Demo
 
