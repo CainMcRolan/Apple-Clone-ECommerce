@@ -1,23 +1,14 @@
-# 🍏 Apple-Clone-ECommerce
+#🔥 Apple-Clone-ECommerce
 
 Welcome to **Apple-Clone-ECommerce**, a modern and sophisticated eCommerce platform inspired by Apple's website. This project showcases sleek design, innovative features, and seamless user experience, making it a perfect starting point for any tech-oriented online store.
 
 ![Apple-Clone-ECommerce](screenshots/home.png)
+![Products-Demo](screenshots/products.png)
+![Cart-Demo](screenshots/cart.png)
 
 ## 🚀 Demo
 
 Check out the live demo of the project [here]([https://example.com](https://cainmcrolan.github.io/Apple-Clone-ECommerce).
-
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Demo](#-demo)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
 
 ## ✨ Features
 
